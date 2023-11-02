@@ -58,7 +58,7 @@ function Login({ navigation }) {
                     value={signInReg.password}
                 />
 
-                <TouchableOpacity style={authStyle.loginButton} onPress={() => navigation.navigate('HomeScreen')}>
+                <TouchableOpacity style={authStyle.loginButton} onPress={() => navigation.navigate('HomePage')}>
                     <Text style={authStyle.loginButtonText}  >Sign In</Text>
                 </TouchableOpacity>
 
@@ -97,7 +97,7 @@ const authStyle = StyleSheet.create({
         paddingHorizontal: 10,
         marginBottom: 15,
         fontSize: 14,
-        Color: "black",
+        color: "black",
     },
 
     loginButton: {

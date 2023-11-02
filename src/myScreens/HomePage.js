@@ -56,8 +56,6 @@ function HomePage({ navigation }) {
        <View style={{marginLeft:18 ,marginTop:20 }} >
         <Text style={{ color: '#95A4B0', fontSize: 19,}}> Welcome Back </Text>
         <Text style={{ color: '#001830', fontSize: 23, }}> Creative Mints </Text>
-      
-
           <TextInput
             placeholder='Search  '
             clearButtonMode="always"
@@ -65,12 +63,10 @@ function HomePage({ navigation }) {
             
           />
        
-
         <Icons
           name="search"
           size={16}
           color='#000000'
-          
           style={{marginLeft:20, position:'absolute',bottom:12
            
           }}
@@ -79,7 +75,7 @@ function HomePage({ navigation }) {
 
       <View style={{ flexDirection: 'row', flexWrap: 'wrap',margin:18,marginTop:25  }}>
 
-        <View style={Styles.box}>
+        <View style={Styles.box} onPress={() => navigation.navigate('TransactionPage')}>
 
         <Icon
           name="circle"
@@ -107,7 +103,11 @@ function HomePage({ navigation }) {
           style={{ position: 'absolute', left:73, bottom: 32, marginHorizontal: 20,width:38,borderColor:'#000000' }}
         />
         <Text  style={{ position: 'absolute', right: 86, bottom: 88,color:'#ffff',fontSize: 18,}} >$ </Text>
-        <Text  style={{ position: 'absolute', right: 36, bottom:34,color:'#ffff',fontSize: 14,}} >Transection </Text>
+
+        <TouchableOpacity onPress={() => navigation.navigate('TransactionPage')}>
+        <Text  style={{ position: 'absolute', right: 36, top:18,color:'#ffff',fontSize: 14,}} >Transection </Text>
+        </TouchableOpacity>
+
         <Text  style={{ position: 'absolute', right: 76, bottom:16,color:'#ffff',fontSize: 10,}} >7 Items </Text>
 
         </View>
@@ -152,7 +152,7 @@ function HomePage({ navigation }) {
 
 
         </View>
-        <View style={Styles.box3}>
+        <View style={Styles.box3} onPress={() => navigation.navigate('CreditcardPage')}>
         <Icon
           name="circle"
           size={46}
@@ -166,16 +166,17 @@ function HomePage({ navigation }) {
           style={{ position: 'absolute', right: 85, bottom: 89, }}
 
         />
-        
-        <Text  style={{ position: 'absolute', right: 36, bottom:34,color:'#ffff',fontSize: 14,}} >Credit Cards </Text>
+          <TouchableOpacity onPress={() => navigation.navigate('CreditcardPage')}>
+        <Text  style={{ position: 'absolute', right: 31, top:19,color:'#ffff',fontSize: 14,}} >Credit Cards </Text>
+        </TouchableOpacity>
         <Text  style={{ position: 'absolute', right: 76, bottom:16,color:'#ffff',fontSize: 10,}} >3 Cards </Text>
 
 
         </View>
 
-         <Text style={{ marginLeft: 30,marginTop: 25,color: '#001830',fontSize: 20, }}  >Choose a categories </Text> 
+         <Text style={{ marginLeft: 30,marginTop: 30,color: '#001830',fontSize: 20, }}  >Choose a categories </Text> 
 
-         <View style={{ flexDirection: 'row', flexWrap: 'wrap',margin:10,marginTop:25  }}>
+         <View style={{ flexDirection: 'row', flexWrap: 'wrap',margin:10,marginTop:35  }}>
 
         <View style={Styles.footerbox}>
 
@@ -237,7 +238,9 @@ const Styles = StyleSheet.create({
   container: {
     flex:1,
     padding:10,
-    backgroundColor: '#ffff'
+    backgroundColor: '#ffff',
+    paddingTop:58,
+    borderRadius:25
 
   },
   header: {
