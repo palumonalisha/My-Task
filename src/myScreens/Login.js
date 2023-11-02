@@ -15,8 +15,6 @@ function Login({ navigation }) {
 
     })
 
-
-
     return (
         <View style={authStyle.container}>
 
@@ -61,7 +59,6 @@ function Login({ navigation }) {
                 <TouchableOpacity style={authStyle.loginButton} onPress={() => navigation.navigate('HomePage')}>
                     <Text style={authStyle.loginButtonText}  >Sign In</Text>
                 </TouchableOpacity>
-
 
             </View>
 
