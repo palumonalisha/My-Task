@@ -129,7 +129,7 @@ function OurProduct({ navigation }) {
                 <View style={Styles.box3} onPress={() => navigation.navigate('TransactionPage')}>
 
                     <TouchableOpacity style={{ backgroundColor: '#ffff', width: 38, height: 25, bottom: 43, borderRadius: 8 }}>
-                        <Text style={{ fontSize: 12, left: 6, top: 2, fontWeight: 'bold' }}> 39%</Text>
+                        <Text style={{ fontSize: 12, left: 6, top: 2, fontWeight: 'bold' }}> 38%</Text>
                     </TouchableOpacity>
                     <Icon
                         name="apple"

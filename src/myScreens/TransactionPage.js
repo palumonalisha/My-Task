@@ -31,10 +31,10 @@ function TransactionPage({ navigation }) {
                 />
             </View>
 
-            <Text style={{ position: 'absolute', color: '#BEBAFB', marginTop: 58, marginLeft: 30, fontSize: 15 }}> Your balance</Text>
-            <Text style={{ position: 'absolute', color: '#ffff', marginTop: 88, marginLeft: 30, fontWeight: 'bold', fontSize: 19 }}> $547,000.00</Text>
+            <Text style={{ position: 'absolute', color: '#BEBAFB', marginTop: 98, marginLeft: 30, fontSize: 15 }}> Your balance</Text>
+            <Text style={{ position: 'absolute', color: '#ffff', marginTop: 119, marginLeft: 30, fontWeight: 'bold', fontSize: 19 }}> $547,000.00</Text>
 
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', margin: 10, marginTop: 25 }}>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', margin: 10, marginTop: 65 }}>
 
                 <View style={Styles.box}>
                     <Icon
@@ -158,7 +158,7 @@ function TransactionPage({ navigation }) {
 const Styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 0,
+        paddingTop:40,
         backgroundColor: '#2F26D9',
         borderRadius: 40
 
@@ -171,7 +171,7 @@ const Styles = StyleSheet.create({
         width: 393,
         height: 399,
         marginRight: 19,
-        marginTop: 10,
+        marginTop: 34,
 
 
     },
@@ -223,8 +223,12 @@ const Styles = StyleSheet.create({
         fontSize: 13,
         fontWeight: 'bold',
         marginTop: 2,
+        borderRadius:10
+        
 
     },
+
+   
 
 
 
