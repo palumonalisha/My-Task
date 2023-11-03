@@ -7,6 +7,8 @@ import Login from './src/myScreens/Login';
 import HomePage from './src/myScreens/HomePage';
 import CreditcardPage from './src/myScreens/CreditcardPage';
 import TransactionPage from './src/myScreens/TransactionPage';
+import OurProduct from './src/myScreens/OurProduct/';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -14,7 +16,10 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login" >
+      {/* <Stack.Navigator initialRouteName="Login" > */}
+      <Stack.Navigator initialRouteName="OurProduct" >
+      
+        <Stack.Screen name="OurProduct" component={ OurProduct} options={{ headerShown: false }} />
         <Stack.Screen name="TransactionPage" component={TransactionPage} options={{ headerShown: false }} />
         <Stack.Screen name="CreditcardPage" component={CreditcardPage} options={{ headerShown: false }} />
         <Stack.Screen name="HomePage" component={HomePage} options={{ headerShown: false }} />
