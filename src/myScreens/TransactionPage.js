@@ -15,6 +15,7 @@ function TransactionPage({ navigation }) {
                     size={19}
                     color='#ffff'
                     style={{ margin: 20, marginLeft: 29, }}
+                    
                 />
 
                 <Icon

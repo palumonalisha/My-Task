@@ -127,7 +127,7 @@ function HomePage({ navigation }) {
           <Text style={{ position: 'absolute', right: 76, bottom: 16, color: '#ffff', fontSize: 10, }} >4 Items </Text>
         </View>
 
-        <View style={Styles.box2}>
+        <View style={Styles.box2}  >
           <Icon
             name="circle"
             size={46}
@@ -141,9 +141,11 @@ function HomePage({ navigation }) {
             style={{ position: 'absolute', right: 86, bottom: 89, }}
 
           />
-
-          <Text style={{ position: 'absolute', right: 16, bottom: 34, color: '#ffff', fontSize: 13, }} >Recommendation </Text>
-          <Text style={{ position: 'absolute', right: 78, bottom: 16, color: '#ffff', fontSize: 10, }} >7 Items </Text>
+          <TouchableOpacity onPress={() => navigation.navigate('OurProduct')}>
+          <Text style={{ position: 'absolute', right: 5, top: 18, color: '#ffff', fontSize: 13, }} >Recommendation </Text>
+          </TouchableOpacity>
+          
+          <Text style={{ position: 'absolute', right: 78, bottom: 17, color: '#ffff', fontSize: 10, }} >7 Items </Text>
 
         </View>
         <View style={Styles.box3} onPress={() => navigation.navigate('CreditcardPage')}>

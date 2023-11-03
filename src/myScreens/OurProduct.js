@@ -92,7 +92,7 @@ function OurProduct({ navigation }) {
 
                     <TouchableOpacity onPress={() => navigation.navigate('TransactionPage')}>
                         <Text style={{ position: 'absolute', right: 15, top: 80, color: '#000000', fontSize: 14, }} >Transection </Text>
-                        <Text style={{ color: '#00000', fontSize: 13, fontWeight: 'bold', left: 30, top: 103, }} >$ 700.00 </Text>
+                        <Text style={{ color: '#000000', fontSize: 13, fontWeight: 'bold', left: 30, top: 103, }} >$ 700.00 </Text>
                         <Text style={{ color: '#EAD30C', fontSize: 10, fontWeight: 'bold', position: 'absolute', left: 28, top: 129, }} >* * * * * * * <Text style={{ color: '#000000', marginTop: 2 }}> 4.5</Text> </Text>
                     </TouchableOpacity>
 
@@ -117,7 +117,7 @@ function OurProduct({ navigation }) {
                         style={{ position: 'absolute', left: 90, bottom: 115, marginHorizontal: 15, }}
                     />
 
-                    <TouchableOpacity onPress={() => navigation.navigate('TransactionPage')}>
+                    <TouchableOpacity >
                         <Text style={{ position: 'absolute', right: 15, top: 80, color: '#000000', fontSize: 14, }} >Transection </Text>
                         <Text style={{ color: '#00000', fontSize: 13, fontWeight: 'bold', left: 30, top: 103, }} >$ 700.00 </Text>
                         <Text style={{ color: '#EAD30C', fontSize: 10, fontWeight: 'bold', position: 'absolute', left: 28, top: 129, }} >* * * * * * * <Text style={{ color: '#000000', marginTop: 2 }}> 4.5</Text> </Text>
@@ -145,7 +145,7 @@ function OurProduct({ navigation }) {
                         style={{ position: 'absolute', left: 90, bottom: 115, marginHorizontal: 15, }}
                     />
 
-                    <TouchableOpacity onPress={() => navigation.navigate('TransactionPage')}>
+                    <TouchableOpacity >
                         <Text style={{ position: 'absolute', right: 15, top: 80, color: '#000000', fontSize: 14, }} >Transection </Text>
                         <Text style={{ color: '#00000', fontSize: 13, fontWeight: 'bold', left: 30, top: 103, }} >$ 700.00 </Text>
                      
@@ -154,7 +154,7 @@ function OurProduct({ navigation }) {
                 </View>
 
 
-                <View style={Styles.box3} onPress={() => navigation.navigate('TransactionPage')}>
+                <View style={Styles.box3} >
 
                     <TouchableOpacity style={{ backgroundColor: '#ffff', width: 38, height: 25, bottom: 43, borderRadius: 8 }}>
                         <Text style={{ fontSize: 12, left: 6, top: 2, fontWeight: 'bold' }}> 39%</Text>
@@ -173,7 +173,7 @@ function OurProduct({ navigation }) {
                         style={{ position: 'absolute', left: 90, bottom: 115, marginHorizontal: 15, }}
                     />
 
-                    <TouchableOpacity onPress={() => navigation.navigate('TransactionPage')}>
+                    <TouchableOpacity >
                         <Text style={{ position: 'absolute', right: 15, top: 80, color: '#000000', fontSize: 14, }} >Transection </Text>
                         <Text style={{ color: '#00000', fontSize: 13, fontWeight: 'bold', left: 30, top: 103, }} >$ 700.00 </Text>
                        
